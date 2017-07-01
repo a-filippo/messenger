@@ -1,7 +1,5 @@
 package ru.afilippo.messenger.store;
 
-import ru.afilippo.messenger.User;
-
 public interface UserStore {
     /**
      * Добавить пользователя в хранилище

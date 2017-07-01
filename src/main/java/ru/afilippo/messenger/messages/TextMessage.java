@@ -2,11 +2,16 @@ package ru.afilippo.messenger.messages;
 
 import java.util.Objects;
 
-/**
- * Простое текстовое сообщение
- */
+
 public class TextMessage extends Message {
     private String text;
+
+    public TextMessage(){}
+
+    public TextMessage(long chatId, long userId, String text){
+        super(userId, chatId, Type.MSG_TEXT);
+        this.text = text;
+    }
 
     public String getText() {
         return text;
